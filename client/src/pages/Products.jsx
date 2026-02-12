@@ -29,7 +29,14 @@ export default function Products() { //defining product page component
                 <input type="number" placeholder="Max Price" onChange={(e) => setMaxPrice(e.target.value)} />
             </div>
             
-            <div>
+            <div
+                style={{
+                    display: "grid",
+                    gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))",
+                    gap: "24px",
+                    marginTop: "20px",
+                }}
+            >
                 {products
                     .filter((p) => {
                         const matchesType =
@@ -41,7 +48,20 @@ export default function Products() { //defining product page component
                         return matchesType && matchesPrice; 
                     })
                     .map(p => (
-                    <div key={p._id}>
+                    <div 
+                        key={p._id}
+                        style= {{
+                            border: "1px solid #eee",
+                            padding: "16px",
+                            borderRadius: "12px",
+                            boxShadow: "0 4px 10px rgba(0, 0, 0, 0.05)",
+                        }}
+                    >
+                        <img 
+                            src={p.image}
+                            alt={p.title}
+                            style={{width: "100%", borderRadius: "8px"}}
+                        />
                         <h3>{p.title}</h3>
                         <p>{p.price}</p>
                     </div>

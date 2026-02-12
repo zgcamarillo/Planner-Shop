@@ -8,7 +8,7 @@ const products = [ //this array is holding the data i want to seed
         title: "Hello Kitty Bouquet Planner", 
         description: "",
         price: 42.50,
-        image: "/image/hkplanner.jpg",
+        image: "/images/hkplanner.jpg",
         type: ["Academic", "Weekly", "Hello Kitty"],
         collection: "Hello Kitty"
     }, // https://www.barnesandnoble.com/w/2025-2026-erin-condren-hello-kitty-blushing-bouquet-planner-erin-condren/1146287042?ean=0840114774493
@@ -32,7 +32,7 @@ const products = [ //this array is holding the data i want to seed
         title: "Sip & Blush Planner ",
         description: "",
         price: 34.99,
-        image: "/images/coquetteplannertwo.jpg",
+        image: "/images/coquetteplannertwo.jpeg",
         type: ["Undated", "Weekly", "The Rosette Room"],
         collection: "The Rosette Room"
     }, //https://thehappyplanner.com/collections/happy-planners/products/undated-cafe-coquette-customizable-planner-big-horizontal-layout-12-months
