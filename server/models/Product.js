@@ -7,7 +7,7 @@ const productSchema = new mongoose.Schema({ //defining schema- creating a bluepr
     description: String, 
     price: Number,
     image: String,
-    type: String
+    type: [String]
 });
 
 module.exports = mongoose.model("Product", productSchema); //creating a model called Product based on this, exporting so other files can use it- mongoose will aalso create a collection named Producted 
